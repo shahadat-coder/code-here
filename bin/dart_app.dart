@@ -1,21 +1,18 @@
 
 
 void main() {
-// this is simple code..
- print('there have all number' + '\n');
- List<String>phoneNumber = ["+88", "01768131685", "01623548967", "01768111286",
-  "01768131685", "019945864563" + '\n'];
- print(phoneNumber);
-// Here have all number with country code 0 index +88.....
- print('there have all number with country code 0 index +88' + '\n');
- print("${phoneNumber[0]}${phoneNumber[1]}");
- print("${phoneNumber[0]}${phoneNumber[2]}");
- print("${phoneNumber[0]}${phoneNumber[3]}");
- print("${phoneNumber[0]}${phoneNumber[4]}");
- print("${phoneNumber[0]}${phoneNumber[5]}" + '\n');
-// Here have all number without 0 index +88..............
- print('there have all number without 0 index +88' + '\n');
- phoneNumber.removeAt(0);
- print(phoneNumber);
+ var productList = [
+   {'name':'soap','price':100},
+   {'name':'sugar','price':200},
+   {'name':'shampoo','price':500},
+   {'name':'Noodles','price':50},
+   {'name':'oil','price':300},
+   {'name':'vinegar','price':150},
+   {'name':'potato','price':40},
+ ];
+for(var OneProduct in productList){
+  var item='Product name is: ${OneProduct['name']} and Product price is: ${OneProduct['price']}tk';
+  print(item);
 }
 
+}
